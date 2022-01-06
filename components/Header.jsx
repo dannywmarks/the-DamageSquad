@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { getCategories } from "../services";
-import Logo from "../public/damageLogoNoFilter.png";
+import Logo from "../public/damageFinalWhite.png";
 import Image from "next/image";
 
 const Header = () => {
@@ -12,21 +12,23 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="lightBlueBackground mx-auto px-10  border-black border-l-4 border-r-4">
-      <div className=" w-full inline-block border-black pb-4 pt-8 ">
-        <div className="md:float-left block pl-4">
-          <Link href="/">
-            <Image src={Logo} height="100%" width="550px" />
-          </Link>
-        </div>
+    <div className="mx-autopx-10 border-black border-l-8 border-r-8 w-full lightBlueBackground">
+      <div className="inline-block border-black headerImg">
         <div className="hidden md:float-left md:contents">
           {categories.map((category) => (
-            <Link key={category.slug} href={`/category/${category.slug}`}>
-              <span className="md:float-right mt-2 align-middle text-black m-4 mr-8 md:mt-2 font-semibold cursor-pointer text-2xl uppercase font-pixelDead">
+            <Link
+              key={category.slug}
+              href={`/category/${category.slug}`}
+              forwardRef
+            >
+              <span className="md:float-right mt-2 align-middle text-black m-4 mr-8 md:mt-2  cursor-pointer text-2xl uppercase  pt-5">
                 {category.name}
               </span>
             </Link>
           ))}
+        </div>
+        <div className="block p-5 ">
+          <Image className="" src={Logo} width="2000px" height="950px" />
         </div>
       </div>
     </div>

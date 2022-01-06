@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-
-import { FeaturedPostCard } from "../components";
-import { getFeaturedPosts } from "../services";
+import ReactPlayer from "react-player";
+import ModalVideo from "react-modal-video";
 
 const responsive = {
   superLargeDesktop: {
@@ -24,16 +23,10 @@ const responsive = {
   },
 };
 
-const FeaturedPosts = () => {
-  const [featuredPosts, setFeaturedPosts] = useState([]);
-  const [dataLoaded, setDataLoaded] = useState(false);
+const RecentVideos = ({ videos }) => {
+  const [isOpen, setOpen] = useState(false);
 
-  useEffect(() => {
-    getFeaturedPosts().then((result) => {
-      setFeaturedPosts(result);
-      setDataLoaded(true);
-    });
-  }, []);
+  const channelVideos = videos.filter((video) => video.id.videoId);
 
   const customLeftArrow = (
     <div className="absolute arrow-btn left-0 text-center py-3 cursor-pointer bg-red-600 rounded-full border-2 border-black">
@@ -82,13 +75,32 @@ const FeaturedPosts = () => {
         responsive={responsive}
         itemClass="px-4"
       >
-        {dataLoaded &&
-          featuredPosts.map((post, index) => (
-            <FeaturedPostCard key={index} post={post} />
-          ))}
+        {channelVideos.map((video, index) => (
+          <div key={index} className="border-4 border-black">
+            <ReactPlayer
+              url={`https://www.youtube.com/watch?v=${video.id.videoId}`}
+              height="275px"
+              width="100%"
+            />
+          </div>
+        ))}
       </Carousel>
     </div>
   );
 };
 
-export default FeaturedPosts;
+export default RecentVideos;
+
+{
+  /* <ModalVideo
+channel="youtube"
+autoplay
+isOpen={isOpen}
+videoId={video.id.videoId}
+onClose={() => setOpen(false)}
+/>
+
+<button className="btn-primary" onClick={() => setOpen(true)}>
+VIEW DEMO
+</button> */
+}

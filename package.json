@@ -6,6 +6,10 @@
     "start": "next start"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free-solid": "^5.0.13",
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/react-fontawesome": "^0.1.16",
     "graphql": "^16.0.1",
     "graphql-request": "^3.7.0",
     "html-react-parser": "^1.4.1",
@@ -14,7 +18,9 @@
     "next": "latest",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-modal-video": "^1.2.8",
     "react-multi-carousel": "^2.6.5",
+    "react-player": "^2.9.0",
     "sass": "^1.44.0"
   },
   "devDependencies": {
