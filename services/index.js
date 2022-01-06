@@ -258,8 +258,7 @@ export const getRecentPosts = async () => {
 export const getRecentVideos = async () => {
 
   const res = await fetch(`https://youtube.googleapis.com/youtube/v3/search?channelId=UC8e0iA5eKylXkV6bnY8McMA&key=${process.env.REACT_APP_YOUTUBE_API_KEY}`)
-  // const res = await fetch(`https://www.googleapis.com/youtube/v3/playlists?part=snippet,contentDetails&channelId=UC8e0iA5eKylXkV6bnY8McMA&maxResults=50&key=AIzaSyBVPEocRwOtCHk4vrkjAsbfp4yy9PkjWi0`)
-  // const res = await fetch(`https://www.googleapis.com/youtube/v3/channels?part=contentDetails&forUsername=jambrose42&key=AIzaSyBVPEocRwOtCHk4vrkjAsbfp4yy9PkjWi0`)
+  
   const data = await res.json()
  
   return data.items
@@ -267,8 +266,7 @@ export const getRecentVideos = async () => {
 
 export const getVideoById = async (id) => {
   const res = await fetch(`https://youtube.googleapis.com/youtube/v3/search?channelId=UC8e0iA5eKylXkV6bnY8McMA&key=${process.env.REACT_APP_YOUTUBE_API_KEY}`)
-  // const res = await fetch(`https://www.googleapis.com/youtube/v3/playlists?part=snippet,contentDetails&channelId=UC8e0iA5eKylXkV6bnY8McMA&maxResults=50&key=AIzaSyBVPEocRwOtCHk4vrkjAsbfp4yy9PkjWi0`)
-  // const res = await fetch(`https://www.googleapis.com/youtube/v3/channels?part=contentDetails&forUsername=jambrose42&key=AIzaSyBVPEocRwOtCHk4vrkjAsbfp4yy9PkjWi0`)
+
   const data = await res.json()
  
   return data
