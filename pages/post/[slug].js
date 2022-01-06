@@ -8,6 +8,7 @@ import {
   Author,
   Comments,
   CommentForm,
+  Loader,
 } from "../../components";
 
 const PostDetails = ({ post }) => {
