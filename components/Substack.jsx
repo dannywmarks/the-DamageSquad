@@ -7,7 +7,7 @@ const Substack = () => {
 
       <div className="flex justify-center items-center align-center subStackbg border-t-8 border-b-8"></div>
       <h1 className="text-center text-white smYellow text-2xl p-8 darkBlueBackground ">
-        Subscribe to Danny Damage's School of HardKnocks
+        Subscribe to Danny Damage's School of Hard Knocks
       </h1>
 
       <div className="darkBlueBackground">
