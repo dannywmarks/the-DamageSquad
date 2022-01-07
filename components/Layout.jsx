@@ -2,9 +2,9 @@ import React from "react";
 import { Header, Navbar, Substack, Footer, ComicStrip } from "./";
 import Image from "next/image";
 import GFLogo from "../public/graciefighter.jpg";
-import board1 from '../public/salComic1board1.png'
-import board2 from '../public/SalComic1StoryBoard3.png'
-import board3 from '../public/salComic1Board3 copy.png'
+import board1 from '../public/week1SalComicFrame1.png'
+import board2 from '../public/week1SalComicFrame2.png'
+import board3 from '../public/week1SalComicFrame3.png'
 import Head from 'next/head'
 
 

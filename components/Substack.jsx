@@ -11,15 +11,15 @@ const Substack = () => {
       </h1>
 
       <div className="darkBlueBackground">
-        <div className="flex items-center justify-content align-center w-full lg:px-20 md:px-20">
+        <div className="flex items-center justify-content align-center w-full lg:px-20 md:px-20 ">
           <iframe
-            className="w-full mx-5"
+            className="w-full p-1 "
             src="https://frame.stackblocks.app/ckxxikm19001511maj26mz7zh"
             width="900"
-            height="320"
+            height="220"
             frameBorder="0"
             scrolling="no"
-            style={{ backgroundColor: "#2570C0" }}
+            style={{ backgroundColor: "#2570C0", verticalAlign: "middle"}}
           ></iframe>
         </div>
         <div className="flex items-center justify-content align-center darkBlueBackground w-full">

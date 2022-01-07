@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const ComicStrip = ({ board1, board2, board3 }) => {
   return (
-    <div className="grid lg:grid-cols-3 bg-black border-black gap-2 border-l-8 border-r-8 border-t-4">
+    <div className="grid lg:grid-cols-3  border-black md:gap-1 bg-black border-l-8 border-r-8 ">
       <div className="">
         <div className="">
     

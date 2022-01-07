@@ -16,16 +16,19 @@ export default function Navbar({ fixed }) {
   return (
     <>
       <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 border-black border-l-8 border-r-8 border-t-8 darkerBlueBackground overflow-x-auto">
-        <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
+        <div className="container  mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start ml-3">
             <div
               className="flex justify-center align-center items-center"
             >
-              <Image src={Logo} height="40px" width="45px" className="" />
+            <div className="w-6 h-5">
+              <Image src={Logo} height="100%" width="100%" className="" />
+            </div>
+             
               <Link href="/" forwardRef>
                 <a className="text-lg font-bold leading-relaxed  place-items-center whitespace-nowrap uppercase text-white">
            
-                  <p className="overflow-x-auto ml-3">THE DAMAGE SQUAD</p>
+                  <p className="overflow-x-auto ml-3 lg:text-2xl pr-2">THE DAMAGE SQUAD</p>
                   {/* {moment().format("dddd, MMMM Do, YYYY")} */}
                 </a>
               </Link>

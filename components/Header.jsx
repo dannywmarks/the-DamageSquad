@@ -12,7 +12,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="mx-autopx-10 border-black border-l-8 border-r-8 w-full lightBlueBackground">
+    <div className="mx-autopx-10 border-black border-l-8 border-r-8 border-b-4 w-full lightBlueBackground">
       <div className="inline-block border-black headerImg">
         <div className="hidden md:float-left md:contents">
           {categories.map((category) => (

@@ -7,7 +7,7 @@ import { FeaturedPosts, RecentVideos } from "../sections";
 export default function Home({ posts, videos }) {
 
   return (
-    <div className=" redBackground2 border-l-8  border-r-8 mx-auto px-8 pt-8  bg-red-500  border-black">
+    <div className=" redBackground2 border-l-8  border-r-8 mx-auto px-6 md:px-8 pt-8  bg-red-500  border-black">
       <RecentVideos videos={videos} />
 
       <FeaturedPosts />
