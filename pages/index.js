@@ -1,13 +1,20 @@
 import React, {useState} from 'react'
-import { Categories, PostCard, PostWidget, Videos } from "../components";
+import { Categories, PostCard, PostWidget, Videos, Header, ComicStrip } from "../components";
 import { getPosts, getRecentVideos } from "../services";
 import { FeaturedPosts, RecentVideos } from "../sections";
+
+import board1 from '../public/week3SalComicFrame1.png'
+import board2 from '../public/week3SalComicFrame2.png'
+import board3 from '../public/week3SalComicFrame3.png'
 
 
 export default function Home({ posts, videos }) {
 
   return (
-    <div className=" redBackground2 border-l-8  border-r-8 mx-auto px-6 md:px-8 pt-8  bg-red-500  border-black">
+    <>
+    <Header />
+    <ComicStrip board1={board1} board2={board2}  board3={board3}/>
+      <div className=" redBackground2 border-l-8  border-r-8 mx-auto px-6 md:px-8 pt-8  bg-red-500  border-black">
       <RecentVideos videos={videos} />
 
       <FeaturedPosts />
@@ -30,6 +37,8 @@ export default function Home({ posts, videos }) {
         </div>
       </div>
     </div>
+    </>
+  
   );
 }
 

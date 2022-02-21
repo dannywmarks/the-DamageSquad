@@ -1,11 +1,10 @@
 import React from "react";
 import { Header, Navbar, Substack, Footer, ComicStrip } from "./";
-import Image from "next/image";
-import GFLogo from "../public/graciefighter.jpg";
+
 import board1 from '../public/week1SalComicFrame1.png'
 import board2 from '../public/week1SalComicFrame2.png'
 import board3 from '../public/week1SalComicFrame3.png'
-import Head from 'next/head'
+
 
 
 const Layout = ({ children }) => {
@@ -15,8 +14,8 @@ const Layout = ({ children }) => {
   
       <Navbar />
   
-      <Header />
-      <ComicStrip board1={board1} board2={board2}  board3={board3}/>
+      {/* <Header /> */}
+      {/* <ComicStrip board1={board1} board2={board2}  board3={board3}/> */}
       {children}
       <Substack />
       <Footer />

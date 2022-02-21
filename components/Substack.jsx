@@ -11,15 +11,15 @@ const Substack = () => {
       </h1>
 
       <div className="darkBlueBackground">
-        <div className="flex items-center justify-content align-center w-full lg:px-20 md:px-20 ">
+        <div className=" w-full h-full lg:px-20 md:px-20 flex-no-wrap ">
           <iframe
             className="w-full p-1 "
             src="https://frame.stackblocks.app/ckxxikm19001511maj26mz7zh"
-            width="900"
-            height="220"
+            width="800"
+            height="525"
             frameBorder="0"
             scrolling="no"
-            style={{ backgroundColor: "#2570C0", verticalAlign: "middle"}}
+            style={{ backgroundColor: "#2570C0", font: "animeace2", display: "flex" ,flexWrap: "no-wrap"}}
           ></iframe>
         </div>
         <div className="flex items-center justify-content align-center darkBlueBackground w-full">
@@ -27,7 +27,7 @@ const Substack = () => {
             className="w-full"
             src="https://thedamagesquad.substack.com/embed"
             width="500"
-            height="320"
+            height="420"
             frameBorder="0"
             scrolling="no"
             style={{ backgroundColor: "#2570C0" }}

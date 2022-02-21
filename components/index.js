@@ -14,3 +14,4 @@ export { default as Footer } from "./Footer"
 export { default as Substack } from './Substack'
 export { default as ComicStrip } from './ComicStrip'
 export { default as Videos } from './Videos.jsx'
+export { default as Comics } from './Comics.jsx'

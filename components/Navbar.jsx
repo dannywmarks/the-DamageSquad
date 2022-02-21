@@ -74,11 +74,31 @@ export default function Navbar({ fixed }) {
               <li className="nav-item">
                 <a
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                  href="https://youtube.com"
+                  href="http://youtube.com"
                 >
                   <FontAwesomeIcon icon={["fab", "youtube"]} />
 
                   <span className="ml-2">VIDEO</span>
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
+                  href="/comic"
+                >
+                  <FontAwesomeIcon icon={["fab", "youtube"]} />
+
+                  <span className="ml-2">COMICS</span>
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
+                  href="/affilates"
+                >
+                  <FontAwesomeIcon icon={["fab", "youtube"]} />
+
+                  <span className="ml-2">AFFILATIONS</span>
                 </a>
               </li>
             </ul>
